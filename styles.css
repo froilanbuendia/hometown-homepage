@@ -11,6 +11,9 @@ DARK BLUE: #1D3557
 body {
   margin: 0;
   text-align: center;
+  color: #f1faee;
+  text-shadow: 0 0 4px #000;
+  font-family: "Sour Gummy", cursive;
 }
 
 img {
@@ -23,9 +26,8 @@ img {
   justify-content: center;
   align-items: center;
   background-image: url("https://www.cerritos.gov/media/242anwd5/2cerritos-now.jpg");
-  height: 343px;
+  min-height: 343px;
   background-size: cover;
-  color: #f1faee;
 }
 
 .hero-title {
@@ -41,15 +43,84 @@ img {
   border-radius: 8px;
 }
 
-.activities-container {
+.activities-container,
+.facts-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  background: #dad46a;
+  min-height: 378px;
 }
 
-.activity-container {
+.facts-container {
+  display: flex;
+  justify-content: center;
+  background: #222e50;
+  padding-right: 40px;
+}
+
+.activity-container,
+.fact-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* align-items: center; */
-  background: #a8dadc;
+}
+
+.activity-image-container,
+.facts-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+.activity-image,
+.facts-image {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.activities.title,
+.activity-title {
+  font-weight: 800;
+}
+
+.guide-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 378px;
+  background: #dad46a;
+}
+.guide-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222e50;
+  width: 400px;
+  min-height: 294px;
+  border-radius: 8px;
+  box-shadow: 0 8px 0 #277b2b;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.guide-card-container:hover {
+  background-color: #277b2b;
+  transform: translateY(-8px);
+}
+
+.guide-img {
+  width: 180px;
+  border-radius: 5%;
+  margin: 16px 16px 16px 16px;
+}
+
+.guide-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
 }
