@@ -1,0 +1,55 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.cerritos.gov/media/242anwd5/2cerritos-now.jpg");
+  height: 343px;
+  background-size: cover;
+  color: #f1faee;
+}
+
+.hero-title {
+  background-color: #222e50;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  background-color: #277b2b;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.activities-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: center; */
+  background: #a8dadc;
+}
