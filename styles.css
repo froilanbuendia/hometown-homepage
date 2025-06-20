@@ -52,38 +52,42 @@ img {
   min-height: 378px;
 }
 
-.facts-container {
-  display: flex;
-  justify-content: center;
-  background: #222e50;
-  padding-right: 40px;
-}
-
-.activity-container,
-.fact-container {
+.activity-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
-.activity-image-container,
-.facts-image-container {
+.activity-image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-inline: 20px;
+  width: 400px;
 }
 
-.activity-image,
-.facts-image {
+.activity-image {
   width: 104px;
   height: 104px;
   border-radius: 50%;
   object-fit: cover;
 }
 .activities.title,
-.activity-title {
+.activity-title,
+.facts-title {
   font-weight: 800;
+}
+
+.facts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222e50;
+}
+
+.facts-list-container {
+  padding-inline: 40px;
+  line-height: 2;
+  text-align: left;
 }
 
 .guide-container {
