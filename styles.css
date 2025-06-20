@@ -1,13 +1,3 @@
-/**
-Palette: https://scrimba.com/links/hometown-palette
-RED: #E63946
-LIGHT: #F1FAEE
-AQUA: #A8DADC
-LIGHT BLUE: #457B9D
-DARK BLUE: #1D3557
-
-*/
-
 body {
   margin: 0;
   text-align: center;
@@ -16,17 +6,13 @@ body {
   font-family: "Sour Gummy", cursive;
 }
 
-img {
-  width: 100px;
-}
-
 .hero-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url("https://www.cerritos.gov/media/242anwd5/2cerritos-now.jpg");
-  min-height: 343px;
+  min-height: 400px;
   background-size: cover;
 }
 
@@ -41,15 +27,15 @@ img {
   background-color: #277b2b;
   padding: 8px 16px;
   border-radius: 8px;
+  width: 420px;
 }
 
 .activities-container,
 .facts-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background: #dad46a;
-  min-height: 378px;
+  min-height: 275px;
 }
 
 .activity-container {
@@ -58,11 +44,8 @@ img {
 }
 
 .activity-image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-inline: 20px;
-  width: 400px;
+  padding: 20px 20px 0 20px;
+  flex: 1;
 }
 
 .activity-image {
@@ -71,10 +54,9 @@ img {
   border-radius: 50%;
   object-fit: cover;
 }
-.activities.title,
-.activity-title,
-.facts-title {
-  font-weight: 800;
+
+.activity-title {
+  margin-bottom: 0;
 }
 
 .facts-container {
@@ -85,9 +67,10 @@ img {
 }
 
 .facts-list-container {
-  padding-inline: 40px;
+  padding-right: 40px;
   line-height: 2;
   text-align: left;
+  max-width: 1105px;
 }
 
 .guide-container {
@@ -112,7 +95,7 @@ img {
 
 .guide-card-container:hover {
   background-color: #277b2b;
-  transform: translateY(-8px);
+  transform: translateY(-2px);
 }
 
 .guide-img {
